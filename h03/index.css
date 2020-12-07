@@ -1,0 +1,7 @@
+body {
+    width: 30%;
+}
+#shuffle {
+    display:grid;
+    grid-template: "a a a" "a a a" "a a a";
+}
