@@ -100,7 +100,9 @@ function turn(src, id) {
                 document.getElementById("done"+id2).style.opacity = "0.5";
                 click = 0;
                 if (points >= 9) {
-                    document.getElementById("playfield").innerHTML = "<img class='amix' src='img/amix.png'> <h2 class='amix'>Je hebt gewonnen shoutout van amix</h2>";
+                    setTimeout(function(){
+                        document.getElementById("playfield").innerHTML = "<img class='amix' src='img/amix.png'> <h2 class='amix'>Je hebt gewonnen shoutout van amix</h2>";
+                    }, 500);
                 }
             }, 300);
 
