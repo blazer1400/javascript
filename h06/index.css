@@ -1,0 +1,47 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin:0;
+    background: url("img/background.png");
+    background-position: center;
+}
+h1 {
+    text-align:center;
+}
+.score p {
+    margin-left:5px;
+    display:inline-block;
+}
+.picture-holder {
+    width:250px;
+    height:250px;
+    position: relative;
+}
+#playfield img {
+    width:250px;
+}
+#playfield {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: center;
+    grid-gap:10px;
+}
+.vraagteken {
+    position: absolute;
+    z-index:2;
+    left:0;
+    top:0;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+header {
+    border:2px solid black;
+    padding:10px;
+    color:white;
+}
+.done {
+    left:0;
+    top:0;
+    position:absolute;
+    z-index:1;
+    transition-duration: 0.3s;
+}
